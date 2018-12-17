@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- for Google -->
+  <meta name="description" content="Vote Me!" />
+  <meta name="keywords" content="joke, politics, election, thailand, ballot" />
+  <meta name="author" content="Puripant Ruchikachorn" />
+
+  <!-- for Facebook -->
+  <meta property="og:title" content="Vote Me!" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://puripant.ruchikachorn.com/vote-me/thumbnail.png" />
+  <meta property="og:url" content="http://puripant.ruchikachorn.com/vote-me/" />
+  <meta property="og:description" content="" />
+
+  <!-- for Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Vote Me!" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="http://puripant.ruchikachorn.com/vote-me/thumbnail.png" />
+
+  <title>Vote Me!</title>
+  <link href="webfonts/stylesheet.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="ballot">
+    <div class="party" onclick="swap_me(this)"><input type="radio" name="radio"><label>นายเพื่อไทย</label></div>
+    <div class="party" onclick="swap_me(this)"><input type="radio" name="radio"><label>นายอนาคตใหม่</label></div>
+    <div class="party" onclick="swap_me(this)" id="me"><input type="radio" name="radio"><label>นายพลังประชารัฐ</label></div>
+    <div class="party" onclick="swap_me(this)"><input type="radio" name="radio"><label>นายประชาธิปัตย์</label></div>
+    <div class="party" onclick="swap_me(this)"><input type="radio" name="radio"><label>นายชาติไทยพัฒนา</label></div>
+    <div class="party" onclick="swap_me(this)"><input type="radio" name="radio"><label>นายไทยรักษาชาติ</label></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

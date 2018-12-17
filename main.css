@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background-color: ghostwhite;
+  font-family: 'Noto Sans Thai UI', sans-serif;
+}
+
+#ballot {
+  width: 300px;
+  margin: 2em auto 0;
+}
+
+.party {
+  position: block;
+  margin: 1em;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.party input {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.party label {
+  cursor: pointer;
+}
