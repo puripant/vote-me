@@ -23,3 +23,17 @@ body {
 .party label {
   cursor: pointer;
 }
+
+input[type="radio"] {
+  position:absolute;
+  clip: rect(0,0,0,0);
+  clip: rect(0 0 0 0);
+}
+
+input[type="radio"] + label::before {
+  content: '⬜️ '; /* content: url('checkbox.png'); */
+}
+
+input[type="radio"]:checked + label::before {
+  content: '❎ '; /* content: url('checkbox-checked.png'); */
+}

@@ -12,4 +12,6 @@ function swap_me(here) {
     }
     ballot.insertBefore(me, here);
   }
+
+  me.getElementsByTagName('input')[0].checked = true;
 }
