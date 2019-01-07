@@ -2,22 +2,34 @@ body {
   margin: 0;
   background-color: ghostwhite;
   font-family: 'Noto Sans Thai UI', sans-serif;
+  font-size: 16px;
+}
+
+#title {
+  font-size: 1.5em;
+  width: 268px;
+  margin: 2em auto 0;
+  padding: 16px;
+  border: 1px solid black;
+  border-bottom: 0px;
 }
 
 #ballot {
   width: 300px;
-  margin: 2em auto 0;
+  margin: 0 auto;
+  padding: 1em 0;
+  border: 1px solid black;
+  line-height: 16px;
 }
 
 .party {
   position: block;
-  margin: 1em;
-  transition: all 0.5s ease;
+  padding: 0.75em 1em;
+  /* transition: all 0.5s ease; */
   cursor: pointer;
 }
 
 .party input {
-  margin-right: 20px;
   cursor: pointer;
 }
 .party label {
@@ -31,9 +43,9 @@ input[type="radio"] {
 }
 
 input[type="radio"] + label::before {
-  content: '⬜️ '; /* content: url('checkbox.png'); */
+  content: '⬜️ '; /* content: url('images/box-empty.png'); */
 }
 
 input[type="radio"]:checked + label::before {
-  content: '❎ '; /* content: url('checkbox-checked.png'); */
+  content: '❎ '; /* content: url('images/box-checked.png'); */
 }
